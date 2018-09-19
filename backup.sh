@@ -1,5 +1,12 @@
+#!/bin/bash -
+
 folder=$1
-path=$(basename ${folder})
+echo "Host Folder for Backup: ${folder}"
+path=$(basename $folder)
+
+echo "Extracted base folder: ${path}"
 
 mkdir -p /backup
 cp -r ${folder} /backup/${path}
+
+ls /backup/${path}

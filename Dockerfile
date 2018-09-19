@@ -1,3 +1,4 @@
-FROM alpine:3.7
+FROM alpine:3.8
+RUN apk add bash
 COPY backup.sh .
-ENTRYPOINT ["sh", "-c", "./backup.sh"]
+ENTRYPOINT ["bash", "backup.sh"]
