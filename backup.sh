@@ -1,4 +1,5 @@
 folder=$1
+path=$(basename ${folder})
 
 mkdir -p /backup
-cp -r /tmp/${folder} /backup/${folder}
+cp -r ${folder} /backup/${path}
