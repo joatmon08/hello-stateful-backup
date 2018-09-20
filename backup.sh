@@ -6,7 +6,7 @@ path=$(basename $folder)
 
 echo "Extracted base folder: ${path}"
 
-mkdir -p /backup
-cp -r ${folder} /backup/${path}
+mkdir ./backup
+cp -r ${folder}/ ./backup/${path}
 
-ls /backup/${path}
+ls ./backup/${path}
